@@ -5,6 +5,9 @@ var port = process.env.PORT || 8080;
 
 //Express
 var express = require('express');
+var multer  = require('multer');
+var upload = multer({ dest: 'uploads/' });
+
 var app = express();
 
 //Handlebars
