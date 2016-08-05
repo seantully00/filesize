@@ -1,0 +1,25 @@
+<!DOCTYPE>  
+<html>  
+<head>  
+  <title>File size utility</title>
+  <style type="text/css">
+    body { font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; }
+    .box { box-sizing: border-box; }
+    .header { border-bottom: 1px solid #c0c0c0; padding: .75em 0; margin-bottom: 1.5em; }
+    .main { width: 70%; float: left; }
+    .sidebar { width: 30%; float: right; padding-left: 1.5em; }
+  </style>
+  {{{block head}}}
+</head>  
+  <div class="header">
+    <h1>Image Search</h1>
+  </div>
+  <div class="box main">
+    {{{body}}}
+    <p>File size utility:</p>
+    <ul></ul>
+  </div>
+  <div class="box sidebar">
+    {{> searches}}
+  </div>
+</html>  
