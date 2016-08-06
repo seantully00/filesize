@@ -29,6 +29,11 @@ app.get('/', function(req, res) {
       res.render('index');
 });
 
+//Get file size
+app.post('/upload', multer({}).single('file-size'), function(req,res){
+    res.json({size:req.file.size});
+});
+
 app.listen(port, function () {
   console.log('App listening on port ' + port + '!');
 });
