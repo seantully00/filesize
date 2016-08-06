@@ -30,7 +30,7 @@ app.get('/', function(req, res) {
 });
 
 //Get file size
-app.post('/upload', multer({}).single('file-size'), function(req,res){
+app.post('/upload', multer({}).single('file'), function(req,res){
     res.json({size:req.file.size});
 });
 
